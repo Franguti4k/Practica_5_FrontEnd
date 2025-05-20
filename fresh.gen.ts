@@ -2,16 +2,22 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
+import * as $CrearContacto from "./routes/CrearContacto.tsx";
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $api_joke from "./routes/api/joke.ts";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
 import * as $index from "./routes/index.tsx";
+import * as $ChatContainer from "./islands/ChatContainer.tsx";
+import * as $ContactContainer from "./islands/ContactContainer.tsx";
+import * as $Contacts from "./islands/Contacts.tsx";
 import * as $Counter from "./islands/Counter.tsx";
+import * as $Formulario from "./islands/Formulario.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {
+    "./routes/CrearContacto.tsx": $CrearContacto,
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
     "./routes/api/joke.ts": $api_joke,
@@ -19,7 +25,11 @@ const manifest = {
     "./routes/index.tsx": $index,
   },
   islands: {
+    "./islands/ChatContainer.tsx": $ChatContainer,
+    "./islands/ContactContainer.tsx": $ContactContainer,
+    "./islands/Contacts.tsx": $Contacts,
     "./islands/Counter.tsx": $Counter,
+    "./islands/Formulario.tsx": $Formulario,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;
