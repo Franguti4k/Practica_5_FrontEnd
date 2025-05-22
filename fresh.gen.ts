@@ -12,7 +12,6 @@ import * as $ChatContainer from "./islands/ChatContainer.tsx";
 import * as $ContactContainer from "./islands/ContactContainer.tsx";
 import * as $Contacts from "./islands/Contacts.tsx";
 import * as $Counter from "./islands/Counter.tsx";
-import * as $Formulario from "./islands/Formulario.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -29,7 +28,6 @@ const manifest = {
     "./islands/ContactContainer.tsx": $ContactContainer,
     "./islands/Contacts.tsx": $Contacts,
     "./islands/Counter.tsx": $Counter,
-    "./islands/Formulario.tsx": $Formulario,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;
