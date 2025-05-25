@@ -6,7 +6,6 @@ export const handler:Handlers = {
       const name = form.get("name")
       const email = form.get("email")
       const phone = form.get("phone")
-      console.log(name, email, phone)
 
       const response = await fetch("https://back-a-p4.onrender.com/contacts/", {
         method: "Post",
